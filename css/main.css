@@ -276,7 +276,7 @@ main#home > h1 {
 }
 
 .overlay {
-  z-index: -1;
+  z-index: 999;
   position: relative;
 }
 
