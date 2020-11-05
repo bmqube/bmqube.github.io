@@ -276,8 +276,13 @@ main#home > h1 {
 }
 
 .overlay {
-  z-index: 999;
+  z-index: 0;
   position: relative;
+  transition: all 0.5s ease-out;
+}
+
+.overlay.show {
+  position: static;
 }
 
 .overlay:hover .project-title {

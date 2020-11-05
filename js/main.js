@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu");
 const menuBranding = document.querySelector(".menu-branding");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
+const overlayImages = document.querySelectorAll(".overlay");
 
 let showItem = false;
 
@@ -15,6 +16,7 @@ function toggleNav() {
     menuBranding.classList.remove("show");
     menuNav.classList.remove("show");
     navItems.forEach((item) => item.classList.remove("show"));
+    overlayImages.forEach((item) => item.classList.remove("show"));
 
     showItem = false;
   } else {
@@ -23,6 +25,7 @@ function toggleNav() {
     menuBranding.classList.add("show");
     menuNav.classList.add("show");
     navItems.forEach((item) => item.classList.add("show"));
+    overlayImages.forEach((item) => item.classList.add("show"));
 
     showItem = true;
   }
