@@ -1,103 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-      crossorigin="anonymous"
-    />
-    <!-- Primary Meta Tags -->
-    <title>
-      BM Monjur Morshed | Programming Enthusiast & A Promising Solver
-    </title>
-    <meta
-      name="title"
-      content="BM Monjur Morshed | Programming Enthusiast & A Promising Solver"
-    />
-    <meta
-      name="description"
-      content="Hello, I'm BM Monjur Morshed, studying Computer Science and Engineering at North South University. I'm very passionate about solving problems and building applications on any platform. I'm always engaged in learning new skills."
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM Monjur Morshed</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="json-data"></div>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://bmqube.com/" />
-    <meta
-      property="og:title"
-      content="BM Monjur Morshed | Programming Enthusiast & A Promising Solver"
-    />
-    <meta
-      property="og:description"
-      content="Hello, I'm BM Monjur Morshed, studying Computer Science and Engineering at North South University. I'm very passionate about solving problems and building applications on any platform. I'm always engaged in learning new skills."
-    />
-    <meta property="og:image" content="/images/portrait.jpeg" />
+    <script>
+        const data = {
+            name: "BM Monjur Morshed",
+            about: "I am a passionate software engineer with a strong foundation in data structures and algorithms. I love to solve problems and learn new technologies. I am a quick learner and a team player.",
+            contact: {
+                email: "bmqube1@gmail.com",
+                phone: "+8801746414730",
+                github: "https://github.com/bmqube",
+                linkedin: "https://www.linkedin.com/in/bmqube/",
+                facebook: "https://www.facebook.com/bmqube",
+            },
+            education: {
+                degree: "BS in Computer Science and Engineering",
+                institution: "North South University",
+                passingYear: 2024,
+                cgpa: 3.48,
+            },
+            experience: [
+                {
+                    title: "Software Engineer (Backend)",
+                    company: "FringeCore_",
+                    duration: "February 2024 - Present",
+                },
+                {
+                    title: "Jr. Software Engineer (Backend)",
+                    company: "ShodaiMama",
+                    duration: "June 2021 - January 2022",
+                },
+            ],
+            achievements: [
+                "ICPC Asia West Continent Finalist 2023",
+                "2nd Runner Up, CoU IUPC 2023",
+                "2nd Runner Up, NSU Intra University Programming Contest 2023",
+                "Honorable Mention in ICPC Regional Dhaka Site 2021 and 2022",
+            ],
+        };
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="http://bmqube.com/" />
-    <meta
-      property="twitter:title"
-      content="BM Monjur Morshed | Programming Enthusiast & A Promising Solver"
-    />
-    <meta
-      property="twitter:description"
-      content="Hello, I'm BM Monjur Morshed, studying Computer Science and Engineering at North South University. I'm very passionate about solving problems and building applications on any platform. I'm always engaged in learning new skills."
-    />
-    <meta property="twitter:image" content="/images/portrait.jpeg" />
-  </head>
-  <body id="home">
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="index.html" class="nav-link"> Home </a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link"> About </a>
-          </li>
-          <li class="nav-item">
-            <a href="work.html" class="nav-link"> My Work </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link"> Contact Me </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="home">
-      <h1 class="lg-heading">
-        BM Monjur <span class="text-secondary">Morshed</span>
-      </h1>
-      <h2 class="sm-heading">Programming Enthusiast & A Promising Solver</h2>
-      <div class="icons">
-        <a href="https://www.facebook.com/bmqube" target="_blank">
-          <i class="fab fa-facebook-square fa-2x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/bmqube" target="_blank">
-          <i class="fab fa-linkedin fa-2x"></i>
-        </a>
-        <a href="https://github.com/bmqube" target="_blank">
-          <i class="fab fa-github-square fa-2x"></i>
-        </a>
-        <a href="https://medium.com/@bmqube" target="_blank">
-          <i class="fab fa-medium fa-2x"></i>
-        </a>
-      </div>
-    </main>
-    <script src="js/main.js"></script>
-  </body>
+        document.getElementById('json-data').innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+    </script>
+</body>
 </html>
